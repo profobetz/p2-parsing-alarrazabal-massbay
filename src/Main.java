@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        RequestLoader loader = new RequestLoader(new File("resources/311_requests.csv"));
+        RequestLoader loader = new RequestLoader(new File("sample.csv"));
 
         List<Neighborhood> neighborhoods = loader.load();
 
