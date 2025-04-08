@@ -1,12 +1,13 @@
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 
-        RequestLoader loader = new RequestLoader(new File("sample.csv"));
+        RequestLoader loader = new RequestLoader(new File("C:\\Users\\MassbayStudent\\Desktop\\CS200\\week7\\p2-parsing-alarrazabal-massbay\\resources\\sample.csv"));
 
         List<Neighborhood> neighborhoods = loader.load();
 
