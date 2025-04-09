@@ -22,10 +22,8 @@ public class ServiceRequest {
 
     public int daysOpen() {
         int days_open = 0;
-        if (this.date_closed != null) {
-            days_open += date_closed.getDayOfYear() - date_opened.getDayOfYear();
-        } else {
-            days_open += LocalDate.now().getDayOfYear() - date_opened.getDayOfYear();
+        if (date_closed != null) {
+            days_open = date_closed.getDayOfYear() - date_opened.getDayOfYear();
         }
         return days_open;
     }

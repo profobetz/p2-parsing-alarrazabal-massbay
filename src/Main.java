@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
 
-        RequestLoader loader = new RequestLoader(new File("C:\\Users\\MassbayStudent\\Desktop\\CS200\\week7\\p2-parsing-alarrazabal-massbay\\resources\\sample.csv"));
+        RequestLoader loader = new RequestLoader(new File("C:\\Users\\MassbayStudent\\Desktop\\CS200\\week7\\p2-parsing-alarrazabal-massbay\\resources\\311_requests.csv"));
 
         List<Neighborhood> neighborhoods = loader.load();
 

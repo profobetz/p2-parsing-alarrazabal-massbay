@@ -52,13 +52,12 @@ public class Neighborhood {
     }
 
     public double getAverageDaysOpen() {
-        double avg_open;
         double total_days = 0;
+        double days_opened = 0;
         for (ServiceRequest case_request : requests ) {
-            total_days += case_request.daysOpen();
+            days_opened += case_request.daysOpen();
         }
-        return avg_open = total_days / requests.size();
-        
+        return days_opened / 365 ; 
     }
 
     public void addRequest(ServiceRequest request) {
